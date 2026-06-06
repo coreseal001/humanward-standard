@@ -13,7 +13,7 @@ assignees: ''
 - [ ] Human life
 - [ ] Human dignity
 - [ ] Human agency
-- [ ] Earth’s living foundation
+- [ ] Earth's living foundation
 - [ ] Truth
 - [ ] Moral restraint
 - [ ] Non-coercion

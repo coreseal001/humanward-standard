@@ -1,5 +1,5 @@
 ﻿blank_issues_enabled: false
 contact_links:
-  - name: Humanward Core
+  - name: Humanward Immutable Core
     url: https://github.com/coreseal001/humanward-standard/blob/main/core/IMMUTABLE_CORE.md
     about: Read the immutable core before proposing changes.
