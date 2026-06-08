@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HumanwardActionRequest",
+  "type": "object",
+  "required": [
+    "proposed_action",
+    "claimed_human_benefit"
+  ],
+  "properties": {
+    "proposed_action": {
+      "type": "string"
+    },
+    "user_request": {
+      "type": "string"
+    },
+    "affected_humans": {
+      "type": "string"
+    },
+    "claimed_human_benefit": {
+      "type": "string"
+    },
+    "possible_harms": {
+      "type": "string"
+    },
+    "data_used": {
+      "type": "string"
+    },
+    "personal_data_involved": {
+      "type": "boolean"
+    },
+    "consent_basis": {
+      "type": "string"
+    },
+    "legal_context": {
+      "type": "string"
+    },
+    "tool_or_external_action": {
+      "type": "string"
+    },
+    "reversibility": {
+      "type": "string",
+      "enum": [
+        "reversible",
+        "partly_reversible",
+        "irreversible",
+        "unknown"
+      ]
+    },
+    "urgency": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "emergency",
+        "unknown"
+      ]
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "unknown"
+      ]
+    },
+    "uncertainty": {
+      "type": "string"
+    },
+    "alternative_safer_action": {
+      "type": "string"
+    },
+    "audit_required": {
+      "type": "boolean"
+    }
+  }
+}

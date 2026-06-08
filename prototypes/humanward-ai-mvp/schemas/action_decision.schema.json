@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HumanwardActionDecision",
+  "type": "object",
+  "required": [
+    "decision",
+    "reason",
+    "failed_checks",
+    "safeguards"
+  ],
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "PERMIT",
+        "PERMIT_WITH_LIMITS",
+        "ASK_CLARIFYING_QUESTION",
+        "REFUSE",
+        "ESCALATE_TO_HUMAN",
+        "BLOCK_AND_ALERT"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "failed_checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safeguards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit_hash": {
+      "type": "string"
+    }
+  }
+}
