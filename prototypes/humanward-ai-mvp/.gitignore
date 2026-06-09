@@ -5,3 +5,9 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 humanward_audit_log.jsonl
+
+humanward_audit_chain.jsonl
+humanward_review_queue.jsonl
+humanward_api_audit_chain.jsonl
+humanward_api_review_queue.jsonl
+humanward_signed_audit_export.json
