@@ -11,3 +11,8 @@ humanward_review_queue.jsonl
 humanward_api_audit_chain.jsonl
 humanward_api_review_queue.jsonl
 humanward_signed_audit_export.json
+
+humanward_reviewer_audit_chain.jsonl
+humanward_reviewer_review_queue.jsonl
+humanward_red_team_audit_chain.jsonl
+humanward_red_team_review_queue.jsonl
