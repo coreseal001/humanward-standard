@@ -16,7 +16,7 @@ Human Good means the best available truthful, lawful, moral, non-coercive action
 
 No.
 
-Humanward began as a standard and immutable core, but it now also includes a buildable AI MVP scaffold.
+Humanward began as a standard and immutable core, but it now also includes a buildable AI MVP scaffold and local review tooling.
 
 Current public state includes:
 
@@ -111,15 +111,6 @@ This makes tampering more visible.
 
 It is not yet public notarization or public-key signing.
 
-## What is the safe-sharing classifier?
-
-The safe-sharing classifier checks whether content appears:
-
-- public-safe,
-- suitable only for controlled review,
-- private-restricted,
-- dangerous-restricted.
-
 ## What is the provider guardrail?
 
 The provider guardrail blocks or restricts future external model providers unless strict privacy, data-use, credential, logging, and human-review boundaries are in place.
@@ -170,35 +161,6 @@ Examples:
 - Unsafe output bypasses verification.
 - Audit logs can be silently altered without detection.
 - Human agency is removed in the name of benefit.
-
-## What is the next stage?
-
-The next stage is to strengthen external review readiness:
-
-- provider adapter boundary,
-- public-key audit signing,
-- expanded evidence manifest,
-- stronger standards crosswalk,
-- external review packet,
-- dashboard/API authentication plan,
-- red-team expansion.
-
-## What should reviewers do?
-
-Reviewers should try to break the system.
-
-They should test:
-
-- self-preference inversion,
-- coercion,
-- privacy exposure,
-- harmful capability release,
-- false certainty,
-- unsafe provider connection,
-- branch degradation,
-- overclaiming,
-- audit tampering,
-- unsafe sharing.
 
 ## What is the correct public claim today?
 

@@ -4,7 +4,7 @@ Date: 2026-06-09
 
 ## Current public stage
 
-Latest public release at this stage:
+Latest public release before this patch:
 
 Humanward Public v1.8 — Red-Team Pack, Reviewer Runbook, and Provider Guardrail
 
@@ -87,107 +87,15 @@ Humanward is currently safest as:
 
 It is not yet a production AI service.
 
-## Next stage: v1.9 candidate
+## Compressed path to v2
 
-Suggested title:
+The earlier path could be:
 
-Humanward Public v1.9 — Provider Boundary, Public-Key Audit Signing, and External Review Pack
+v1.9 → v1.10 → v2.0
 
-## v1.9 objectives
+The better compressed path is:
 
-### 1. Provider adapter boundary
+v1.9 — Q&A, stage evidence, v2 readiness gate, release gate, evidence manifest generator.
+v2.0 — Major Verification Candidate, only after v1.9 passes all release-gate checks.
 
-Create a strict boundary for future real model providers.
-
-The boundary must ensure:
-
-- disabled by default,
-- explicit environment configuration,
-- no secret exposure,
-- no user-data training by default,
-- no automatic external calls,
-- clear provider metadata,
-- pre-action gate before generation,
-- post-output verifier after generation,
-- audit logging,
-- human review for uncertain or sensitive cases.
-
-### 2. Public-key audit signing
-
-Move from HMAC-only signed exports toward public/private key audit signing.
-
-Goal:
-
-- private key signs audit export,
-- public key verifies export,
-- release manifest can include public verification material,
-- no private key committed.
-
-### 3. Versioned evidence manifest
-
-Create a public evidence file for each release:
-
-- release tag,
-- release commit,
-- immutable core hash,
-- test result,
-- reviewer_check result,
-- backup status summary,
-- known limitations,
-- no endorsement claim.
-
-### 4. External review packet
-
-Prepare a clean packet for reviewers:
-
-- one-page brief,
-- current claim boundary,
-- how to run tests,
-- red-team pack,
-- failure taxonomy,
-- what feedback is needed,
-- what would falsify claims.
-
-### 5. Expanded standards crosswalk
-
-Expand standards/evaluation mapping with citations and exact claim boundaries.
-
-Avoid claiming official conformity.
-
-### 6. Dashboard/API authentication plan
-
-Before any non-local exposure, document:
-
-- authentication,
-- authorization,
-- rate limiting,
-- audit logging,
-- CSRF/CORS rules,
-- local-only default,
-- no public exposure without review.
-
-## Next-stage passing criteria
-
-v1.9 should not release until:
-
-- all tests pass,
-- reviewer check passes,
-- generated logs are ignored,
-- immutable core hash unchanged,
-- no private keys/secrets committed,
-- evidence manifest created,
-- provider boundary remains disabled by default,
-- public language avoids endorsement and compliance overclaiming.
-
-## Recommended order of work
-
-1. Add Q&A and current/next stage docs.
-2. Add evidence manifest.
-3. Add provider boundary design.
-4. Add public-key audit signing module or design.
-5. Add tests.
-6. Run tests and reviewer_check.
-7. Commit.
-8. Tag release.
-9. Publish v1.9.
-10. Back up to E-drive.
+This avoids unnecessary releases while still preserving evidence discipline.

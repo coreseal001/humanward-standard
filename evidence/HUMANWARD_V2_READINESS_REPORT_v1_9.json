@@ -1,0 +1,29 @@
+{
+  "v2_readiness_version": "1.0",
+  "expected_core_hash": "5af88d97cc43303cf5b84211e5b06e7c5feddd006329c16bc8135836354d3629",
+  "checks": {
+    "immutable_core_matches": true,
+    "pytest_passed": true,
+    "reviewer_check_passed": true,
+    "required_docs_present": true,
+    "no_tracked_generated_logs": true,
+    "claim_boundary_present": true,
+    "provider_not_enabled_by_default": true
+  },
+  "required_docs": {
+    "docs/HUMANWARD_PUBLIC_QA_v1.md": true,
+    "docs/HUMANWARD_CURRENT_AND_NEXT_STAGE_DETAIL_v1.md": true,
+    "docs/HUMANWARD_V2_READINESS_STANDARD_v1.md": true,
+    "docs/HUMANWARD_V2_RELEASE_GATE_MATRIX_v1.md": true,
+    "docs/HUMANWARD_V2_BACKTEST_PLAN_v1.md": true,
+    "prototypes/humanward-ai-mvp/docs/HUMANWARD_RELIABLE_QA_v1.md": true,
+    "prototypes/humanward-ai-mvp/docs/HUMANWARD_STAGE_EVIDENCE_MANIFEST_TEMPLATE_v1.md": true
+  },
+  "generated_log_check": {
+    "passed": true,
+    "tracked_generated_files": []
+  },
+  "evidence_manifest_path": "C:\\Users\\samuel\\Desktop\\Humanward AI Project\\humanward-standard\\evidence\\HUMANWARD_EVIDENCE_MANIFEST_v1_9.json",
+  "overall_pass": true,
+  "note": "This is a v2 readiness gate. Passing does not prove full Humanward compliance."
+}

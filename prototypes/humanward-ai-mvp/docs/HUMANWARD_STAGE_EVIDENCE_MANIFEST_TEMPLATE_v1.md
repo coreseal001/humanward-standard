@@ -45,50 +45,6 @@ python -m humanward_ai.reviewer_check
 Result:
 TBD
 
-## Red-team result
-
-Total:
-TBD
-
-Passed:
-TBD
-
-Failed:
-TBD
-
-Overall:
-TBD
-
-## Provider guardrail result
-
-Local provider:
-TBD
-
-Unsafe provider:
-TBD
-
-Overall:
-TBD
-
-## Audit evidence
-
-Audit chain valid:
-TBD
-
-Signed audit export:
-TBD
-
-## Backup
-
-Backup label:
-TBD
-
-Backup path:
-TBD
-
-Immutable core hash in backup:
-TBD
-
 ## Claim boundary
 
 This release does not claim:
@@ -100,9 +56,5 @@ This release does not claim:
 - real provider safety unless specifically tested and reviewed.
 
 ## Known limitations
-
-TBD
-
-## Reviewer notes
 
 TBD

@@ -16,3 +16,5 @@ humanward_reviewer_audit_chain.jsonl
 humanward_reviewer_review_queue.jsonl
 humanward_red_team_audit_chain.jsonl
 humanward_red_team_review_queue.jsonl
+
+HUMANWARD_V2_READINESS_REPORT.json
